@@ -1,7 +1,6 @@
 package cn.genlei.nutwiki.utils;
 
 import java.util.HashMap;
-import java.util.HashSet;
 
 /**
  * @author junfeng
@@ -19,6 +18,7 @@ public class MimeUtil {
         contentTypeMap.put("txt","text/plain");
         contentTypeMap.put("jpg","image/jpeg");
         contentTypeMap.put("png","image/png");
+        contentTypeMap.put("bmp","image/bmp");
         contentTypeMap.put("gif","image/gif");
     }
     public static String getExt(String path){
@@ -45,7 +45,4 @@ public class MimeUtil {
         return contentTypeMap.getOrDefault(ext,DEFAULT_TYPE);
     }
 
-    public static void main(String[] args){
-        System.out.println(getExt("1.html."));
-    }
 }

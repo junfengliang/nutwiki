@@ -23,7 +23,7 @@ public class ContentController {
         contentService.content(request,response);
     }
 
-    @RequestMapping(value = {"/test"},method = RequestMethod.GET)
+    @RequestMapping(value = {"/config"},method = RequestMethod.GET)
     public void testHtml(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.getWriter().write("111 test::" + request.getRequestURI());
     }
